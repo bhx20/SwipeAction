@@ -6,7 +6,7 @@ plugins {
 
 android {
     defaultConfig {
-        namespace = "me.thanel.swipeactionview"
+        namespace = "lab.bhx.action"
         minSdkVersion 14
         targetSdkVersion 33
         compileSdk 33

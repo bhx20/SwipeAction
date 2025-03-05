@@ -27,11 +27,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <me.thanel.swipeactionview.SwipeActionView
+        <lab.bhx.action.SwipeActionView
             android:id="@+id/swipe_right"
             style="@style/SwipeItem">
 
-            <me.thanel.swipeactionview.MultiSwipeActionView
+            <lab.bhx.action.MultiSwipeActionView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
@@ -49,18 +49,18 @@
                 <ImageView
                     style="@style/Icon"
                     android:contentDescription="i2" />
-            </me.thanel.swipeactionview.MultiSwipeActionView>
+            </lab.bhx.action.MultiSwipeActionView>
 
             <TextView
                 style="@style/Container"
                 android:text="@string/can_swipe_right" />
-        </me.thanel.swipeactionview.SwipeActionView>
+        </lab.bhx.action.SwipeActionView>
 
-        <me.thanel.swipeactionview.SwipeActionView
+        <lab.bhx.action.SwipeActionView
             android:id="@+id/swipe_left"
             style="@style/SwipeItem">
 
-            <me.thanel.swipeactionview.MultiSwipeActionView
+            <lab.bhx.action.MultiSwipeActionView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="end|center_vertical"
@@ -79,14 +79,14 @@
                     style="@style/Icon"
                     android:contentDescription="i4" />
 
-            </me.thanel.swipeactionview.MultiSwipeActionView>
+            </lab.bhx.action.MultiSwipeActionView>
 
             <TextView
                 style="@style/Container"
                 android:text="@string/can_swipe_left" />
-        </me.thanel.swipeactionview.SwipeActionView>
+        </lab.bhx.action.SwipeActionView>
 
-        <me.thanel.swipeactionview.SwipeActionView
+        <lab.bhx.action.SwipeActionView
             android:id="@+id/swipe_both"
             style="@style/SwipeItem"
             app:sav_tools_previewBackground="swipeLeft">
@@ -100,9 +100,9 @@
             <TextView
                 style="@style/Container"
                 android:text="@string/can_swipe_in_both_directions" />
-        </me.thanel.swipeactionview.SwipeActionView>
+        </lab.bhx.action.SwipeActionView>
 
-        <me.thanel.swipeactionview.SwipeActionView
+        <lab.bhx.action.SwipeActionView
             android:id="@+id/swipe_complete"
             style="@style/SwipeItem">
 
@@ -115,9 +115,9 @@
             <TextView
                 style="@style/Container"
                 android:text="@string/complete_callback" />
-        </me.thanel.swipeactionview.SwipeActionView>
+        </lab.bhx.action.SwipeActionView>
 
-        <me.thanel.swipeactionview.SwipeActionView
+        <lab.bhx.action.SwipeActionView
             android:id="@+id/swipe_with_ripples"
             style="@style/SwipeItem"
             app:sav_swipeLeftRippleColor="@color/colorPrimary"
@@ -134,9 +134,9 @@
                 style="@style/Container"
                 android:elevation="8dp"
                 android:text="@string/animated_ripple" />
-        </me.thanel.swipeactionview.SwipeActionView>
+        </lab.bhx.action.SwipeActionView>
 
-        <me.thanel.swipeactionview.SwipeActionView
+        <lab.bhx.action.SwipeActionView
             android:id="@+id/swipe_card_view"
             style="@style/SwipeItem"
             app:sav_swipeLeftRippleColor="@color/colorPrimary"
@@ -158,9 +158,9 @@
                     style="@style/Container"
                     android:text="@string/swipe_able_card_view" />
             </androidx.cardview.widget.CardView>
-        </me.thanel.swipeactionview.SwipeActionView>
+        </lab.bhx.action.SwipeActionView>
 
-        <me.thanel.swipeactionview.SwipeActionView
+        <lab.bhx.action.SwipeActionView
             android:id="@+id/swipe_delayed"
             style="@style/SwipeItem">
 
@@ -173,9 +173,9 @@
             <TextView
                 style="@style/Container"
                 android:text="@string/returns_after_delay" />
-        </me.thanel.swipeactionview.SwipeActionView>
+        </lab.bhx.action.SwipeActionView>
 
-        <me.thanel.swipeactionview.SwipeActionView
+        <lab.bhx.action.SwipeActionView
             android:id="@+id/swipe_layout"
             style="@style/SwipeItem">
 
@@ -243,9 +243,9 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-        </me.thanel.swipeactionview.SwipeActionView>
+        </lab.bhx.action.SwipeActionView>
 
-        <me.thanel.swipeactionview.SwipeActionView
+        <lab.bhx.action.SwipeActionView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -261,6 +261,6 @@
                 app:cardCornerRadius="4dp"
                 app:cardElevation="10dp" />
 
-        </me.thanel.swipeactionview.SwipeActionView>
+        </lab.bhx.action.SwipeActionView>
     </LinearLayout>
 </ScrollView>

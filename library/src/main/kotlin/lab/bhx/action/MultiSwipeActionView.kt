@@ -1,4 +1,4 @@
-package me.thanel.swipeactionview
+package lab.bhx.action
 
 import android.content.Context
 import android.util.AttributeSet

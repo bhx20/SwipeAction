@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.thanel.swipeactionview.sample;
+package lab.bhx.action.sample;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -24,9 +24,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import me.thanel.swipeactionview.SwipeActionView;
-import me.thanel.swipeactionview.SwipeDirection;
-import me.thanel.swipeactionview.SwipeGestureListener;
+import lab.bhx.action.SwipeActionView;
+import lab.bhx.action.SwipeDirection;
+import lab.bhx.action.SwipeGestureListener;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.thanel.swipeactionview
+package lab.bhx.action
 
 /**
  * Interface definition for callbacks to be invoked when swipe actions of the

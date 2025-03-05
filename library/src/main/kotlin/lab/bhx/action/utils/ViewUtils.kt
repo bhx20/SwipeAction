@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.thanel.swipeactionview.utils
+package lab.bhx.action.utils
 
 import android.annotation.SuppressLint
 import android.view.Gravity

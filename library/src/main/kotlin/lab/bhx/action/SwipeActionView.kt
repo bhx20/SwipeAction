@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.thanel.swipeactionview
+package lab.bhx.action
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -32,15 +32,15 @@ import android.view.*
 import android.view.animation.DecelerateInterpolator
 import android.widget.FrameLayout
 import androidx.annotation.ColorInt
-import me.thanel.swipeactionview.animation.SwipeActionViewAnimator
-import me.thanel.swipeactionview.utils.clamp
-import me.thanel.swipeactionview.utils.drawInBoundsOf
-import me.thanel.swipeactionview.utils.isRightAligned
-import me.thanel.swipeactionview.utils.marginEnd
-import me.thanel.swipeactionview.utils.marginStart
-import me.thanel.swipeactionview.utils.radius
-import me.thanel.swipeactionview.utils.setBoundsFrom
-import me.thanel.swipeactionview.utils.totalWidth
+import lab.bhx.action.animation.SwipeActionViewAnimator
+import lab.bhx.action.utils.clamp
+import lab.bhx.action.utils.drawInBoundsOf
+import lab.bhx.action.utils.isRightAligned
+import lab.bhx.action.utils.marginEnd
+import lab.bhx.action.utils.marginStart
+import lab.bhx.action.utils.radius
+import lab.bhx.action.utils.setBoundsFrom
+import lab.bhx.action.utils.totalWidth
 import kotlin.math.abs
 import kotlin.math.absoluteValue
 

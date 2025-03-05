@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.thanel.swipeactionview
+package lab.bhx.action
 
 import android.animation.ObjectAnimator
 import android.graphics.Canvas

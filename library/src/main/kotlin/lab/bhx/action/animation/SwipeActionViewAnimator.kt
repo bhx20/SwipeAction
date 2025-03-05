@@ -14,24 +14,12 @@
  * limitations under the License.
  */
 
-package me.thanel.swipeactionview.animation
+package lab.bhx.action.animation
 
 import android.view.View
-import me.thanel.swipeactionview.utils.setScale
-import kotlin.math.min
 
-class ScalableIconAnimator : SwipeActionViewAnimator {
-    override fun onUpdateSwipeProgress(view: View, progress: Float, minActivationProgress: Float) {
-        var scale = 0.65f
+interface SwipeActionViewAnimator {
+    fun onUpdateSwipeProgress(view: View, progress: Float, minActivationProgress: Float)
 
-        if (progress > minActivationProgress) {
-            val xOverActivation = progress - minActivationProgress
-            scale += min(xOverActivation / 0.4f, 1f - scale)
-        }
-
-        view.setScale(scale)
-    }
-
-    override fun onActivate() {
-    }
+    fun onActivate() {}
 }

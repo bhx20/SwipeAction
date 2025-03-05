@@ -14,14 +14,24 @@
  * limitations under the License.
  */
 
-package me.thanel.swipeactionview
+package lab.bhx.action.animation
 
-enum class SwipeDirection {
-    Left,
-    Right;
+import android.view.View
+import lab.bhx.action.utils.setScale
+import kotlin.math.min
 
-    companion object {
-        internal const val LEFT = 1
-        internal const val RIGHT = 2
+class ScalableIconAnimator : SwipeActionViewAnimator {
+    override fun onUpdateSwipeProgress(view: View, progress: Float, minActivationProgress: Float) {
+        var scale = 0.65f
+
+        if (progress > minActivationProgress) {
+            val xOverActivation = progress - minActivationProgress
+            scale += min(xOverActivation / 0.4f, 1f - scale)
+        }
+
+        view.setScale(scale)
+    }
+
+    override fun onActivate() {
     }
 }
