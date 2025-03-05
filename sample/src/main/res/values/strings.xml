@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright © 2016-2018 Łukasz Rutkowski
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  --><resources>
+    <string name="advanced_layout">Advanced layout</string>
+
+    <string name="animated_ripple">Displays animated ripple when swiped</string>
+
+    <string name="app_name">SwipeActionView</string>
+
+    <string name="can_be_customized">This can also be customized</string>
+    <string name="can_swipe_in_both_directions">Can swipe in both directions</string>
+    <string name="can_swipe_left">Can swipe left</string>
+    <string name="can_swipe_right">Can swipe right</string>
+    <string name="complete_callback">Callback on swipe complete</string>
+
+    <string name="clicked">Clicked</string>
+
+    <string name="full_control">You have full control over look of SwipeActionView</string>
+
+    <string name="returns_after_delay">Returns to original position after delay</string>
+
+    <string name="swipe_able_card_view">Swipe-able CardView</string>
+    <string name="swipe_left">Swipe left</string>
+    <string name="swipe_right">Swipe right</string>
+
+    <string name="swiped_left">Swiped left</string>
+    <string name="swiped_right">Swiped right</string>
+
+    <string name="swipe_left_complete">Swipe left complete</string>
+    <string name="swipe_right_complete">Swipe right complete</string>
+    <string name="swiped_halfway">and only first icon</string>
+</resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2016-2018 Łukasz Rutkowski
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <me.thanel.swipeactionview.SwipeActionView
+            android:id="@+id/swipe_right"
+            style="@style/SwipeItem">
+
+            <me.thanel.swipeactionview.MultiSwipeActionView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/Icon"
+                    android:contentDescription="i1" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#C81111" />
+
+                <ImageView
+                    style="@style/Icon"
+                    android:contentDescription="i2" />
+            </me.thanel.swipeactionview.MultiSwipeActionView>
+
+            <TextView
+                style="@style/Container"
+                android:text="@string/can_swipe_right" />
+        </me.thanel.swipeactionview.SwipeActionView>
+
+        <me.thanel.swipeactionview.SwipeActionView
+            android:id="@+id/swipe_left"
+            style="@style/SwipeItem">
+
+            <me.thanel.swipeactionview.MultiSwipeActionView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/Icon"
+                    android:contentDescription="i3" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#C81111" />
+
+                <ImageView
+                    style="@style/Icon"
+                    android:contentDescription="i4" />
+
+            </me.thanel.swipeactionview.MultiSwipeActionView>
+
+            <TextView
+                style="@style/Container"
+                android:text="@string/can_swipe_left" />
+        </me.thanel.swipeactionview.SwipeActionView>
+
+        <me.thanel.swipeactionview.SwipeActionView
+            android:id="@+id/swipe_both"
+            style="@style/SwipeItem"
+            app:sav_tools_previewBackground="swipeLeft">
+
+            <ImageView style="@style/Icon" />
+
+            <ImageView
+                style="@style/Icon"
+                android:layout_gravity="end|center_vertical" />
+
+            <TextView
+                style="@style/Container"
+                android:text="@string/can_swipe_in_both_directions" />
+        </me.thanel.swipeactionview.SwipeActionView>
+
+        <me.thanel.swipeactionview.SwipeActionView
+            android:id="@+id/swipe_complete"
+            style="@style/SwipeItem">
+
+            <ImageView style="@style/Icon" />
+
+            <ImageView
+                style="@style/Icon"
+                android:layout_gravity="end|center_vertical" />
+
+            <TextView
+                style="@style/Container"
+                android:text="@string/complete_callback" />
+        </me.thanel.swipeactionview.SwipeActionView>
+
+        <me.thanel.swipeactionview.SwipeActionView
+            android:id="@+id/swipe_with_ripples"
+            style="@style/SwipeItem"
+            app:sav_swipeLeftRippleColor="@color/colorPrimary"
+            app:sav_swipeRightRippleColor="@color/colorAccent"
+            app:sav_tools_previewRipple="swipeRight">
+
+            <ImageView style="@style/Icon" />
+
+            <ImageView
+                style="@style/Icon"
+                android:layout_gravity="end|center_vertical" />
+
+            <TextView
+                style="@style/Container"
+                android:elevation="8dp"
+                android:text="@string/animated_ripple" />
+        </me.thanel.swipeactionview.SwipeActionView>
+
+        <me.thanel.swipeactionview.SwipeActionView
+            android:id="@+id/swipe_card_view"
+            style="@style/SwipeItem"
+            app:sav_swipeLeftRippleColor="@color/colorPrimary"
+            app:sav_tools_previewRipple="swipeLeft">
+
+            <ImageView style="@style/Icon" />
+
+            <ImageView
+                style="@style/Icon"
+                android:layout_gravity="end|center_vertical" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                app:cardElevation="12dp">
+
+                <TextView
+                    style="@style/Container"
+                    android:text="@string/swipe_able_card_view" />
+            </androidx.cardview.widget.CardView>
+        </me.thanel.swipeactionview.SwipeActionView>
+
+        <me.thanel.swipeactionview.SwipeActionView
+            android:id="@+id/swipe_delayed"
+            style="@style/SwipeItem">
+
+            <ImageView style="@style/Icon" />
+
+            <ImageView
+                style="@style/Icon"
+                android:layout_gravity="end|center_vertical" />
+
+            <TextView
+                style="@style/Container"
+                android:text="@string/returns_after_delay" />
+        </me.thanel.swipeactionview.SwipeActionView>
+
+        <me.thanel.swipeactionview.SwipeActionView
+            android:id="@+id/swipe_layout"
+            style="@style/SwipeItem">
+
+            <ImageView style="@style/Icon" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/can_be_customized"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout style="@style/Container">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/advanced_layout" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/full_control" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/swipe_left_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="swipeLeft"
+                            android:text="@string/swipe_left" />
+
+                        <Button
+                            android:id="@+id/swipe_right_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="swipeRight"
+                            android:text="@string/swipe_right" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </me.thanel.swipeactionview.SwipeActionView>
+
+        <me.thanel.swipeactionview.SwipeActionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:src="@mipmap/ic_launcher" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp" />
+
+        </me.thanel.swipeactionview.SwipeActionView>
+    </LinearLayout>
+</ScrollView>
