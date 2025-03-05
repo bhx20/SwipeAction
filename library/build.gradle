@@ -30,9 +30,9 @@ project.afterEvaluate {
     publishing {
         publications {
             aar(MavenPublication) {
-                groupId = 'com.github.Tunous'
-                artifactId = 'SwipeActionView'
-                version = '1.5.0-SNAPSHOT'
+                groupId = 'com.github.bhx'
+                artifactId = 'SwipeAction'
+                version = '1.0.0-SNAPSHOT'
 
                 artifact bundleReleaseAar
                 artifact sourcesJar
